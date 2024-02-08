@@ -1,0 +1,18 @@
+########  README  ########
+######## Date: 2024-02-08 ########
+
+This R script was used for building up classifiers.
+
+File Annotation:
+
+"mlr3_RandomForest.R" is the main R script.
+"Infection_vs_Cancer_difftable.txt", "Bacteria_vs_Cancer_difftable.txt", "Fungi_vs_Cancer_difftable.txt" and "TE_vs_Cancer_difftable.txt" was differential features table. Host Gene and Transposable Elements(TE) expression were transformed into TPM. Microbial and bacteriophage were used relative abundances. Other features were remained orginal values.
+"trainset_all.txt" was group annotation file of trainset between infection and lung cancer. "testset_all.txt" was group annotation file of validation set between infection and lung cancer. "trainset_subgroup.txt" was group annotation file of trainset among subgroup infection and lung cancer. "testset_subgroup.txt" was group annotation file of validation set among subgroup infection and lung cancer. 
+
+Command Line:
+Infection vs Cancer: Rscript mlr3_RandomForest.R Infection_vs_Cancer_difftable.txt Infection trainset_all.txt testset_all.txt
+Bacteria vs Cancer: Rscript mlr3_RandomForest.R Bacteria_vs_Cancer_difftable.txt Bacteria trainset_subgruop.txt testset_subgroup.txt
+Fungi vs Cancer: Rscript mlr3_RandomForest.R Fungi_vs_Cancer_difftable.txt Fungi trainset_subgruop.txt testset_subgroup.txt
+TB vs Cancer: Rscript mlr3_RandomForest.R TB_vs_Cancer_difftable.txt TB trainset_subgruop.txt testset_subgroup.txt
+
+########  END  ########
