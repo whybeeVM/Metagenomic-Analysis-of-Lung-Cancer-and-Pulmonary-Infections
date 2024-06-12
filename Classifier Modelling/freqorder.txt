@@ -1,9 +1,0 @@
-Var1	Freq
-DNA_Fusobacterium_nucleatum	100
-DNA_Haemophilus_influenzae	100
-DNA_Mycobacterium_intracellulare	100
-DNA_Porphyromonas_gingivalis	100
-DNA_Pseudomonas_aeruginosa	100
-DNA_Streptococcus_constellatus	100
-DNA_Streptococcus_oralis	100
-DNA_Campylobacter_rectus	22
