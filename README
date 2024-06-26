@@ -5,10 +5,16 @@ This repository contains original codes for major analyses in the manuscript 'Mu
 All data are included in the 'data' directory. In each analysis folder, the codes for the major analyses are included.The processed microbiome and host data and basic demographic data (age, gender, BMI, site) for all 402 individuals are provided.  
 The full metadata for all individuals are subject to controlled access according to Human Genetic Resources Administration of China regulation and to comply with informed consent, and can be provided upon reasonable request to the corresponding author, for the purpose of replication of the results or for review assessment.
 
-
 ######## data ########
 
+We put all intermediate results into folders below:
 
+CNV: copy number variants information table
+Cell_proportion: immune cell proprotion table estimated by CIBERTSORT
+DNA_micro: bacteria, fungi, viruses and bacteriophage relative abundance table from DNA data
+RNA_micro: bacteria, fungi, viruses and bacteriophage relative abundance table from RNA data
+RNA_EXP: host gene expression raw count table
+TE_EXP: Transposable element expression raw count table
 
 ######## mechine_learning_script ########
 
