@@ -11,8 +11,8 @@ We put all intermediate results into folders below:
 
 CNV: copy number variants information table
 Cell_proportion: immune cell proprotion table estimated by CIBERTSORT
-DNA_micro: bacteria, fungi, viruses and bacteriophage relative abundance table from DNA data
-RNA_micro: bacteria, fungi, viruses and bacteriophage relative abundance table from RNA data
+DNA_micro: bacteria, fungi, viruses and bacteriophage relative abundance table from DNA data of all 402 clinical samples and Negative controls
+RNA_micro: bacteria, fungi, viruses and bacteriophage relative abundance table from RNA data of all 402 clinical samples and Negative controls
 RNA_EXP: host gene expression raw count table
 TE_EXP: Transposable element expression raw count table
 
