@@ -1,5 +1,7 @@
 ########  README  ########
-######## Date: 2024-02-08 ########
+######## Date: 2024-05-08 ########
+
+This repository contains original codes for major analyses in the manuscript 'Multimodal Metagenomic Analysis of Bronchoalveolar Lavage Fluid Enables Differential Diagnosis Between Lung Cancer and Pulmonary Infections'. All data are included in the 'data' directory. In each analysis folder, the codes for the major analyses are included.
 
 This R script was used for building up classifiers.
 
