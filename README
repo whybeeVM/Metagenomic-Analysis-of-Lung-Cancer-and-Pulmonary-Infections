@@ -7,7 +7,17 @@ All data published were accorded to Human Genetic Resources Administration of Ch
 
 ####### pipeline ########
 
+In our github folder kraken2_pipeline, it contains scripts to generate microbial matrix: 
+01_data_preprocessing.sh, it used fastp to remove low quality and adaptor sequences.
+02_rmhost.sh, it used BWA and samtools to remove reads mapped on hg38 reference genome.
+03_kraken2_bracken.sh, it used kraken2 and bracken for microbial profiles calling.
+04_relative_abudances_matrix.sh, it calculated relative abundances of all samples and summarized in species and genus levels.
 
+Also, in folder RNAseq_pipeline, it contains scripts used for read mapping, gene expression quantification, and profile classification: 
+01_data_preprocessing.sh, it used fastp to remove low quality and adaptor sequences as same as shell script in kraken2_pipeline.
+02_map_to_reference_hg38.sh, it used HiSAT2 to mapping reads to hg38 reference genome.
+03_featureCount.sh, it used featureCounts to call gene expression matrix for single sample. Also, it provided gene annotation file (gff) version ensure reproducibility of our results.
+04_readcount_to_expression_profiles.sh, it combined all count table into one gene expression matrix.
 
 ######## data ########
 
