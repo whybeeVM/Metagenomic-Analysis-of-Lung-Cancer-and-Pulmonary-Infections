@@ -6,11 +6,11 @@ All data are included in the 'data' directory. In each analysis folder, the code
 The full metadata for all individuals are subject to controlled access according to Human Genetic Resources Administration of China regulation and to comply with informed consent, and can be provided upon reasonable request to the corresponding author, for the purpose of replication of the results or for review assessment.
 
 
-######## Data ########
+######## data ########
 
 
 
-######## Script ########
+######## mechine_learning_script ########
 
 
 This R script was used for building up classifiers.
@@ -26,5 +26,9 @@ Infection vs Cancer: Rscript mlr3_RandomForest.R Infection_vs_Cancer_difftable.t
 Bacteria vs Cancer: Rscript mlr3_RandomForest.R Bacteria_vs_Cancer_difftable.txt Bacteria trainset_subgruop.txt testset_subgroup.txt
 Fungi vs Cancer: Rscript mlr3_RandomForest.R Fungi_vs_Cancer_difftable.txt Fungi trainset_subgruop.txt testset_subgroup.txt
 TB vs Cancer: Rscript mlr3_RandomForest.R TB_vs_Cancer_difftable.txt TB trainset_subgruop.txt testset_subgroup.txt
+
+
+####### pipeline ########
+
 
 ########  END  ########
