@@ -32,19 +32,16 @@ TE_EXP: Transposable element expression raw count table
 
 ######## mechine_learning_script ########
 
+In this folder, we put all meachine learning models building scripts, group annotaion file, input file, LASSO example script and assemble learning scripts in it.
 
-This R script was used for building up classifiers.
-
-File Annotation:
-
-"mlr3_RandomForest.R" is the main R script.
-"Infection_vs_Cancer_difftable.txt", "Bacteria_vs_Cancer_difftable.txt", "Fungi_vs_Cancer_difftable.txt" and "TE_vs_Cancer_difftable.txt" was differential features table. Host Gene and Transposable Elements(TE) expression were transformed into TPM. Microbial and bacteriophage were used relative abundances. Other features were remained orginal values.
-"trainset_all.txt" was group annotation file of trainset between infection and lung cancer. "testset_all.txt" was group annotation file of validation set between infection and lung cancer. "trainset_subgroup.txt" was group annotation file of trainset among subgroup infection and lung cancer. "testset_subgroup.txt" was group annotation file of validation set among subgroup infection and lung cancer. 
-
-Command Line:
-Infection vs Cancer: Rscript mlr3_RandomForest.R Infection_vs_Cancer_difftable.txt Infection trainset_all.txt testset_all.txt
-Bacteria vs Cancer: Rscript mlr3_RandomForest.R Bacteria_vs_Cancer_difftable.txt Bacteria trainset_subgruop.txt testset_subgroup.txt
-Fungi vs Cancer: Rscript mlr3_RandomForest.R Fungi_vs_Cancer_difftable.txt Fungi trainset_subgruop.txt testset_subgroup.txt
-TB vs Cancer: Rscript mlr3_RandomForest.R TB_vs_Cancer_difftable.txt TB trainset_subgruop.txt testset_subgroup.txt
+input_file: all candidate features (CNV, DNA-micro, RNA-micro, Host(Gene expression/cell proportion), TE(transposable elements))of all comparisions
+group_file: trainset.2: train set in two groups (pulmonary infection vs lung cancer); testset.2: test set in two groups (pulmonary infection vs lung cancer);
+            trainset.4: train set in four groups (bacterial infection vs fungal infection vs TB vs lung cancer); testset.2: test set in four groups (bacterial infection vs fungal infection vs TB vs lung cancer).
+example-lasso_DNA-Bacteria_vs_Cancer: please run "lasso-pipeline.sh". all R scripts were integrated in this shell script.
+LASSO-scripts: please run "lasso-pipeline.sh". all R scripts were integrated in this shell script.
+RF-scripts: please run "RandomForest-pipeline.sh". all R scripts were integrated in this shell script.
+SVM-scripts: please run "SVM-pipeline.sh". all R scripts were integrated in this shell script.
+XGboost-scripts: please run "XGBoost-pipeline.sh". all R scripts were integrated in this shell script.
+Assemble_learning_scripts: file.txt contained real path of all results from four classifiers(LASSO,RF,SVM and XGboost); commandline: Rscript model_combined_addsenspe.R
 
 ########  END  ########
